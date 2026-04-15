@@ -345,5 +345,5 @@ java improvedSpellChecker
 
 - **`addAll` complexity comment mismatch in `ArrayIntegerSet.java`:** The Javadoc for `addAll(int[])` states Θ(s·n) in the description body but Θ(s+n) in the opening line. The correct complexity, given that `add()` is Θ(n) and is called `s` times, is Θ(s·n).
 - **`improvedSpellChecker` filter semantics:** `hasAtLeastHalfLetters` counts character occurrences in `dictWord` with multiplicity against the distinct character set of `word`. This means a `dictWord` containing many repeated characters that appear in `word` can pass the filter even if character overlap is semantically low.
-- **No shared dictionary file is committed.** `improvedSpellChecker` expects `DomainSpecificDict.csv` at runtime; its contents are not in this repository.
+- **No shared dictionary file is committed.** `improvedSpellChecker` expects `DomainSpecificDict.csv` at runtime; its contents are not in this repository. They can be provided upon request, or you can set your own csv with the same title.
 - **No test harness.** JUnit or equivalent is not present in any file.
